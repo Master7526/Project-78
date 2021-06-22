@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" style="width: 30%;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button onclick="update();">Next</button>
+        </center>
+        <script>
+            var images = ["https://i.postimg.cc/MKdhy06Z/family.jpg","https://www.clipartkey.com/mpngs/m/168-1689200_waving-cartoon-kid-ambitious-clipart.png","https://i.postimg.cc/L6HcYQM0/grand-father.png", "https://www.clipartkey.com/mpngs/m/38-380057_fun-with-dad-fun-dad-clip-art.png" , "https://i.pinimg.com/736x/cb/fc/04/cbfc04fcb82a648667da617129fdf2d0.jpg"];
+                var names = ["Family Book", "Suhas Subramani","Subramani Swaminadhan", "Kalpana Muralidoss"];
+                var i = 0;
+                function update()
+                {
+                    i++;
+                    var numbers_of_family_member_in_array = 2
+                    if(i > numbers_of_family_member_in_array )
+                    {
+                        i = 0;
+                    }
+                    var updatedImage = images[i];
+                    var updatedName  = names[i];
+                    document.getElementById("family_member_image").src = updatedImage;
+                    document.getElementById("family_member_name").innerHTML = updatedName;
+                }
+                </script>
+            
+    </body>
+</html>
+
+            
